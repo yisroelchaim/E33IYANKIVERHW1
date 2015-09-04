@@ -22,25 +22,17 @@ namespace PoliceDispatcherClient
 
         private void initializeIncidentCombo()
         {
-   /*         string[] codes = new string[]
+            Class1 c1 = new Class1();
+
+            int count = c1.GetIncidentCodes().Count();
+
+            for (int i = 1; i <= count; i++)
             {
-               "Repeat last transmission:10-9",
-               "Off duty : 10-10",
-               "Off duty at home :10-10A",
-               "Identify this frequency: 10 -11",
-               "Visitors are present(be discrete): 10-12",
-               "Advise weather and road conditions: 10-13"
-
-
-              };
-            foreach (string incident in codes)
-
-            {
-                IncidentCombo.Items.Add(incident);
-
+                Incident inc = new Incident(c1.GetIncidentCodes().Item(i));
+                IncidentCombo.Items.Add(inc);
             }
-            IncidentCombo.SelectedIndex = 0;
-            */
+
+            CoFreeUnusedLibrariesEx(0, 0);
 
         }
 
@@ -70,22 +62,13 @@ namespace PoliceDispatcherClient
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            Class1 c1 = new Class1();
+            
             initializeIncidentCombo();
 
             // c1.GetIncidentCodes();
 
             //   label6.Text = c1.GetIncidentCodes().Item(2).Name;
-            int count = c1.GetIncidentCodes().Count();
-
-            for (int i = 1; i <= count; i++) 
-            {
-                Incident inc = new Incident(c1.GetIncidentCodes().Item(i));
-                IncidentCombo.Items.Add(inc); 
-            }
-
-            CoFreeUnusedLibrariesEx(0, 0);
-            
+          
             
              
         }
