@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using SecureCommunicationComponent;
 using CSCIE237LegacyComponent;
 using System.Runtime.InteropServices;
+using CustomCombos; 
 
 namespace PoliceDispatcherClient
 {
@@ -25,11 +26,17 @@ namespace PoliceDispatcherClient
             Class1 c1 = new Class1();
 
             int count = c1.GetIncidentCodes().Count();
-
+            IncidentCombo icbo = new IncidentCombo();
+            panel1.Controls.Add(icbo);
+            icbo.Show(); 
             for (int i = 1; i <= count; i++)
             {
-                Incident inc = new Incident(c1.GetIncidentCodes().Item(i));
-                IncidentCombo.Items.Add(inc);
+                //      Incident inc = new Incident(c1.GetIncidentCodes().Item(i));
+                // homework 1.4 
+                // IncidentCombo.Items.Add(inc);
+
+                CustomCombos.Incident inc = new CustomCombos.Incident(c1.GetIncidentCodes().Item(i));
+                icbo.Items.Add(inc);
             }
 
             CoFreeUnusedLibrariesEx(0, 0);

@@ -42,6 +42,7 @@
             this.IncidentCombo = new System.Windows.Forms.ComboBox();
             this.StreetTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // CallButton
@@ -93,7 +94,7 @@
             // StateCombo
             // 
             this.StateCombo.FormattingEnabled = true;
-            this.StateCombo.Location = new System.Drawing.Point(12, 232);
+            this.StateCombo.Location = new System.Drawing.Point(28, 369);
             this.StateCombo.Name = "StateCombo";
             this.StateCombo.Size = new System.Drawing.Size(121, 21);
             this.StateCombo.TabIndex = 20;
@@ -101,7 +102,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 200);
+            this.label4.Location = new System.Drawing.Point(28, 337);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(32, 13);
             this.label4.TabIndex = 19;
@@ -109,7 +110,7 @@
             // 
             // CityTextBox
             // 
-            this.CityTextBox.Location = new System.Drawing.Point(15, 167);
+            this.CityTextBox.Location = new System.Drawing.Point(31, 304);
             this.CityTextBox.Name = "CityTextBox";
             this.CityTextBox.Size = new System.Drawing.Size(100, 20);
             this.CityTextBox.TabIndex = 18;
@@ -117,7 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 136);
+            this.label3.Location = new System.Drawing.Point(28, 273);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(24, 13);
             this.label3.TabIndex = 17;
@@ -126,7 +127,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 77);
+            this.label2.Location = new System.Drawing.Point(28, 214);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 16;
@@ -152,7 +153,7 @@
             // 
             // StreetTextBox
             // 
-            this.StreetTextBox.Location = new System.Drawing.Point(12, 102);
+            this.StreetTextBox.Location = new System.Drawing.Point(28, 239);
             this.StreetTextBox.Name = "StreetTextBox";
             this.StreetTextBox.Size = new System.Drawing.Size(100, 20);
             this.StreetTextBox.TabIndex = 13;
@@ -165,11 +166,19 @@
             this.label6.Size = new System.Drawing.Size(0, 13);
             this.label6.TabIndex = 26;
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(12, 87);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 100);
+            this.panel1.TabIndex = 27;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(509, 261);
+            this.ClientSize = new System.Drawing.Size(509, 412);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.CallButton);
             this.Controls.Add(this.OfficerTextBox);
@@ -208,6 +217,7 @@
         private System.Windows.Forms.ComboBox IncidentCombo;
         private System.Windows.Forms.TextBox StreetTextBox;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

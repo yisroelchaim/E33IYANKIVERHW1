@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoliceDispatcherClient", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SecureCommunicationComponent", "SecureCommunicationComponent\SecureCommunicationComponent.csproj", "{1467C535-9F7D-4CF0-9ECA-757CC51B3125}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomCombos", "CustomCombos\CustomCombos.csproj", "{4E774335-D789-419A-A2FA-DC6C1DBD4E8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{1467C535-9F7D-4CF0-9ECA-757CC51B3125}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1467C535-9F7D-4CF0-9ECA-757CC51B3125}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1467C535-9F7D-4CF0-9ECA-757CC51B3125}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E774335-D789-419A-A2FA-DC6C1DBD4E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E774335-D789-419A-A2FA-DC6C1DBD4E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E774335-D789-419A-A2FA-DC6C1DBD4E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E774335-D789-419A-A2FA-DC6C1DBD4E8D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
