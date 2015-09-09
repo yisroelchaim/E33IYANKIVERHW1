@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IncidentCollection.cs" />
     <Compile Include="IncidentCombos.cs">
       <SubType>Component</SubType>
     </Compile>

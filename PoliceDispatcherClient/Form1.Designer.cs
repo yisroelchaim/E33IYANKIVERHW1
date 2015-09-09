@@ -39,7 +39,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.IncidentCombo = new System.Windows.Forms.ComboBox();
+            this.DefaultCombo = new System.Windows.Forms.ComboBox();
             this.StreetTextBox = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -142,14 +142,14 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Incident Type:";
             // 
-            // IncidentCombo
+            // DefaultCombo
             // 
-            this.IncidentCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.IncidentCombo.FormattingEnabled = true;
-            this.IncidentCombo.Location = new System.Drawing.Point(12, 43);
-            this.IncidentCombo.Name = "IncidentCombo";
-            this.IncidentCombo.Size = new System.Drawing.Size(121, 21);
-            this.IncidentCombo.TabIndex = 14;
+            this.DefaultCombo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DefaultCombo.FormattingEnabled = true;
+            this.DefaultCombo.Location = new System.Drawing.Point(12, 43);
+            this.DefaultCombo.Name = "DefaultCombo";
+            this.DefaultCombo.Size = new System.Drawing.Size(121, 21);
+            this.DefaultCombo.TabIndex = 14;
             // 
             // StreetTextBox
             // 
@@ -168,7 +168,7 @@
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(12, 87);
+            this.panel1.Location = new System.Drawing.Point(12, 88);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 100);
             this.panel1.TabIndex = 27;
@@ -191,7 +191,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.IncidentCombo);
+            this.Controls.Add(this.DefaultCombo);
             this.Controls.Add(this.StreetTextBox);
             this.Name = "Form1";
             this.Text = "Police Dispatcher Client Igor Yankiver HW1";
@@ -214,7 +214,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox IncidentCombo;
+        private System.Windows.Forms.ComboBox DefaultCombo;
         private System.Windows.Forms.TextBox StreetTextBox;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;

@@ -10,8 +10,16 @@ namespace CustomCombos
     public class IncidentCombo : ComboBox 
     {
 
-        IncidentCollection coll = new IncidentCollection();
-
+        IncidentCollection coll;
+        public IncidentCombo()
+        {
+            coll = new IncidentCollection();
+            coll.ItemAdded = new ItemAddedDelegate(this.OnItemAdded);
+        }
+        public void OnItemAdded(Incident value)
+        {
+            base.Items.Add(value);
+        }
         public new IncidentCollection Items
         {
             get
@@ -23,18 +31,13 @@ namespace CustomCombos
                 this.coll = value;
             }
         }
-            //  public new IncidentCollection Items { get; set; }
 
-        }
-
-
-    public class IncidentCollection
-    {
-        ArrayList AllIncidents = new ArrayList(); 
-        public int Add(Incident value)
+        private void InitializeComponent()
         {
-            return AllIncidents.Add(value); 
+            //this.suspendlayout();
+            //this.resumelayout(false);
+
         }
-        
+
     }
 }
